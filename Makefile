@@ -1,3 +1,7 @@
+LANGUAGE = $(filter-out $@,$(MAKECMDGOALS))
+%:
+ @:
+
 sync:
 	wget -mkEpnp -P ~/site-content https://www.chiark.greenend.org.uk/~sgtatham/bugs-ru.html
 
