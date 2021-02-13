@@ -13,4 +13,4 @@ deploy:
 	ssh -N -L 8080:127.0.0.1:8080 $(USER)@$(ADDR)
 
 sync-language:
-	wget -kEp -P ~/check2 https://www.chiark.greenend.org.uk/~sgtatham/bugs-$(LANGUAGE).html
+	wget -kEp -P ~/site-content https://www.chiark.greenend.org.uk/~sgtatham/bugs-$(LANGUAGE).html
